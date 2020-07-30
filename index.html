@@ -1,22 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> First Terminal Page</title>
 
 <style>
+
+[class*="col-"]{
+	float:left;
+	padding:15px;
+}
+	div.gallery{
+		margin:5px;
+		border: 10px solid darkgreen;
+		float: left;
+		width: 300px;
+	}
+	div.gallery:hover{
+		border: 10px solid red;
+	}
+	div.gallery img{
+		width: 100%;
+		height: auto;
+	}
+	div.desc{
+		background-color: yellow;
+		color:blue;
+		padding: 15px;
+		text-align:center;
+	}
+	div.footer{
+	background-color:orchid;
+	color:blue;
+	text-align: center
+	font-size:15px;
+	}
+
 	body { background-color: lightgreen;
 	 }
-
+h1{background-color: blue;}
 
 h1 { color:black;
 text-align: center ;
+}
+
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+
+
+@media only screen and (max-width:600px){
+/* for mobile*/
+[class*="col-"]{
+	width:100%;
+}
+
 }
 </style>
 </head>
 <body>
 
+
 	<h1>This is going to be the best website in the world. Just kidding. </h1>
 <p> Well, I should be writing a paragraph but I don't think I would be doing that. I really can't think of anything to write about. </p>
 <h2> This a new line is written on a different font size. </h2>
+<div class="gallery">
+		<a target="_blank" >
+			<img src="img/Bird.png" alt="CGI_Bird" width="700" height="500">
+		</a>
+		<div class="desc"> This was my first computer genterated image </div>
+</div>
+		<div class="gallery">
+			<a target="_blank">
+				<img src="img/c.png" alt="Water_Tower_Rocket" width="700" height="500">
+			</a>
+			<div class="desc"> This is a water tower rocket build by Space X </div>
+		</div>
+
+			<div class="gallery" >
+				<a target="_blank" >
+					<img src="img/Robot.jpg" alt="Killer Robot" width="700" height = " 500">
+				</a>
+				<div class="desc"> Killer Robots from MARS! </div>
+			</div>
+			
+			<div class="footer">
+				<a target="-_blank"
+					width="700" height = "500">
+				</a>
+			</div>
 </body>
 </html>
